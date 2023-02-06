@@ -1,0 +1,32 @@
+.input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-top: 20px;
+
+
+    &-search{
+        display: flex;
+        flex: 1;
+        height: 20px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        outline: none;
+        border-width: 1px;
+        
+    }
+
+    ::placeholder{
+        font-weight: 700;
+        padding-left: 5px;
+    }
+
+    &-icon{
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: rgb(3, 3, 69);
+        cursor: pointer;
+    }
+}
