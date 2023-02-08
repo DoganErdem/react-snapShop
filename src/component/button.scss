@@ -1,5 +1,8 @@
+@import "../mixin.scss";
+
 .button{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -11,5 +14,15 @@
         color: white;
         background-color: rgb(3, 3, 69);
         cursor: pointer;
+
+        @include mq("mobile"){
+            flex-wrap: wrap;
+            margin-top: 5px;
+            justify-content: space-around;
+        }
+    }
+
+    @include mq("mobile"){
+        flex-wrap: wrap;
     }
 }

@@ -1,14 +1,13 @@
 import React from 'react';
 import "./button.scss"
 
-function Button(props) {
+function Button({ selection }) {
     return (
         <div className='button'>
-            <button className='button-select'> Mountain </button>
-            <button className='button-select'> Animal </button>
-            <button className='button-select'> Baech </button>
-            <button className='button-select'> Flower </button>
-            
+            <button className='button-select' onClick={() => {selection("mountain")}} > Mountain </button>
+            <button className='button-select' onClick={() => {selection("animal")}} > Animal </button>
+            <button className='button-select' onClick={() => {selection("beach")}} > Beach </button>
+            <button className='button-select' onClick={() => {selection("flower")}} > Flower </button>
         </div>
     );
 }

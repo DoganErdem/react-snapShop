@@ -1,3 +1,5 @@
+@import "../mixin.scss";
+
 .input{
     display: flex;
     flex-direction: row;
@@ -5,6 +7,11 @@
     justify-content: center;
     width: 40%;
     margin-top: 20px;
+
+    @include mq("mobile"){
+        display: flex;
+        flex-direction: column;
+    }
 
 
     &-search{
@@ -15,6 +22,14 @@
         border-top-left-radius: 5px;
         outline: none;
         border-width: 1px;
+
+        @include mq("mobile"){
+            display: flex;
+            min-height: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            
+        }
         
     }
 
@@ -28,5 +43,11 @@
         border-top-right-radius: 5px;
         background-color: rgb(3, 3, 69);
         cursor: pointer;
+
+        @include mq("mobile"){
+            display: flex;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
     }
 }
